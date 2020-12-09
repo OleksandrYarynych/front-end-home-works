@@ -1,0 +1,218 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.star-wars-button{
+    background-color: black;
+    border: 3px solid grey;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sword,
+.sword-1{
+    width: 80px;
+    height: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.sword-white-part{
+    width: 20px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.sword-black-part{
+    width: 10px;
+    height: 100%;
+    background-color: #000000;
+}
+
+.sword-blade{
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.star-wars-button:hover .sword-1{
+    animation-name: transform-sword-1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.star-wars-button:hover .sword-2{
+    animation-name: transform-sword-2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.star-wars-button:hover .sword-3{
+    animation-name: transform-sword-3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.star-wars-button:hover{
+    cursor: pointer;
+}
+
+.star-wars-button:hover      .red-blade{
+    background-color: red;
+    -webkit-box-shadow: -1px 5px 15px 9px rgba(255,0,0,0.68);
+    -moz-box-shadow: -1px 5px 15px 9px rgba(255,0,0,0.68);
+    box-shadow: -1px 5px 15px 9px rgba(255,0,0,0.68);
+}
+
+.star-wars-button:hover   .green-blade{
+    background-color: green;
+    -webkit-box-shadow: -1px 5px 15px 9px rgba(0,255,0,0.68);
+    -moz-box-shadow: -1px 5px 15px 9px rgba(0,255,0,0.68);
+    box-shadow: -1px 5px 15px 9px rgba(0,255,0,0.68);
+}
+
+@keyframes transform-sword-1{
+    from{
+        opacity: 1;
+        height: 10px;
+    }
+    to{
+        opacity: 0;
+        height: 0px;
+    }
+}
+
+@keyframes transform-sword-2{
+    from{
+        transform: rotate(0deg);  
+         
+    }
+    to{
+        transform: rotate(45deg); 
+    }
+}
+
+@keyframes transform-sword-3{
+    from{
+        transform: rotate(0deg) translateX(0px) translateY(0px);      
+    }
+    to{
+        transform: rotate(-45deg) translateX(7px) translateY(-15px);       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.hw-block{
+    width: 1000px;
+    height: 600px;
+    border-top: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ball-block{
+    width: 80px;
+    height: 100%;
+}
+
+.ball{
+    width: 2px;
+    height: 100px;
+    background-color: #000000;
+    position: relative;
+    
+}
+
+.ball::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: rgb(224,235,31);
+    background: radial-gradient(circle, rgba(224,235,31,1) 0%, rgba(220,26,26,1) 100%);
+    
+    -webkit-box-shadow: 5px 191px 77px 7px rgba(0,0,0,0.18);
+    -moz-box-shadow: 5px 191px 77px 7px rgba(0,0,0,0.18);
+    box-shadow: 5px 191px 77px 7px rgba(0,0,0,0.18);
+    border-radius: 50%;
+    top: 100px;
+    left: -40px;
+
+}
+
+.ball-block:first-child{
+    animation-name: first-ball-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.ball-block:last-child{
+    animation-name: last-ball-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  first-ball-animation{
+    0%{
+        transform: rotate(0deg) translateX(0px) ;
+    }
+    25%{
+        transform: rotate(10deg) translateX(-150px) ;
+    }
+    50%{
+        transform: rotate(0deg) translateX(0px) ;
+    }
+    100%{
+        transform: rotate(0deg) translateX(0px) ;
+    }
+}
+
+@keyframes  last-ball-animation{
+    0%{
+        transform: rotate(0deg) translateX(0px) ;
+    }
+    50%{
+        transform: rotate(0deg) translateX(0px) ;
+    }
+    75%{
+        transform: rotate(-10deg) translateX(150px);
+    }
+    100%{
+        transform: rotate(0deg) translateX(0px) ;
+    }
+}
+
+
+
+
+
+
+

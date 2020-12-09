@@ -1,0 +1,104 @@
+*{
+    background-color:#2E2E2E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body{  
+    font-size: 10px;
+    color: #ffffff;
+    margin: 0px;
+    height: 1000px;
+}
+
+.HightTable{
+    margin-top: 10rem;
+    margin-left: 4.5rem;
+    border-radius: 3px;
+}
+
+.OtherTables{
+    margin-left: 4.5rem;
+    margin-top: 4rem;
+}
+
+table{
+    border:solid 1px  grey;
+    border-collapse: collapse;
+    text-align: left;   
+}
+
+tr{
+    border: solid 1px  grey;
+}
+
+.firstColumn{
+    color: #BDBDBD;
+}
+
+th,td{
+    padding: 0.5rem;
+    height: 3rem;
+    width: 30rem;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+select{
+    font-size: 15px;
+    color: #ffffff;
+    border:#2E2E2E;
+}
+
+.GreyText{
+    color: grey;
+}
+
+.RightSideIcons{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+svg{
+    max-height: 20px;
+    max-width: 20px;
+    color :white;
+    padding-right:15px ;
+}
+
+.FilePdfIcon{
+    color: dodgerblue;
+}
+
+.ThirdTableHeader{
+    border-radius: 10px;
+    height: 48px; 
+    background-color: #424242;
+}
+
+.SearchFeld,
+.SearchLogo{
+    background-color:#424242;
+    font-size: 20px;
+    color: #848484;
+    border:#2E2E2E;
+    height: 48px;
+    width: 200px;
+    padding: 0px;
+    margin-left: 0px; 
+    border-collapse: collapse;
+    border-color: #ffffff;
+}
+
+.SearchFeld{
+    margin-left: 50px;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+button{
+    border-collapse: collapse;
+    border-color: #ffffff;
+}

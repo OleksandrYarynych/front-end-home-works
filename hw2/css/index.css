@@ -1,0 +1,53 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    height: 800px;
+}
+
+.table_style{
+    border-collapse: collapse;
+    border:solid 1px black;
+}
+
+table{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-spacing: 3px;
+}
+
+tr{
+    border:solid 1px black;
+}
+
+th,td{
+    border:solid 1px black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2,p{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+.small-buttons-block-bigger-buttons__defoult-button {
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+}
+
+.small-buttons-block-bigger-buttons__defoult-button_bigger-paddings {
+  padding: 10px 26px;
+}
+
+.small-buttons-block-bigger-buttons__defoult-button_smaller-paddings {
+  padding: 8px 12px;
+}
+
+.small-buttons-block-smaller-buttons__defoult-button_bigger-paddings {
+  padding: 9px 24px;
+}
+
+.small-buttons-block-smaller-buttons__defoult-button_smaller-paddings {
+  padding: 6px 12px;
+}
+
+.small-buttons-block__down-buttons_bigger-paddings {
+  padding: 6px 14px;
+}
+
+.small-buttons-block__down-buttons_smaller-paddings {
+  padding: 6px 10px;
+}
+
+.small-buttons-block-bigger-buttons__defoult-button_red {
+  background: #FF3E1D;
+  color: #FFFFFF;
+}
+
+.small-buttons-block-bigger-buttons__defoult-button_red-search-button {
+  border-radius: 50%;
+  background: #FF3E1D;
+  border: none;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/search-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.small-buttons-block-bigger-buttons__defoult-button_green-search-button {
+  border-radius: 50%;
+  background: #00D200;
+  border: none;
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+  background-position: center;
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.small-buttons-block-bigger-buttons__defoult-button_margins {
+  margin-right: 45px;
+}
+
+.small-buttons-font {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.smaller-icon {
+  width: 20px;
+  height: 20px;
+}

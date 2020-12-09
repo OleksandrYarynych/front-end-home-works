@@ -1,0 +1,344 @@
+*{
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 100%;
+}
+
+.page-navigation{
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #C4C4C4;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    position: fixed;
+    z-index: 4;
+}
+
+.navigation-panel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.search-feld{
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    height: 30px;
+    width: 25%;
+}
+
+.navigation{
+    display: flex;
+    padding-top: 5px;
+}
+
+.nav-bar:not(:last-child){
+    margin-right: 10px;
+}
+
+.direct-bar{
+    position: relative;
+}
+
+.direct-bar::after{
+    content: "5";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #DC565B;
+    position: absolute;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    top: -10px;
+    right: -10px;
+    padding: 5px;
+}
+
+.main-section{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+
+.header-right-side{
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+.account-photo{
+    margin: 30px 20px 0px 6%;
+}
+
+.account-name,
+.follovers-block{
+    display: flex;
+    width: 60%;
+    padding-top: 10px;
+}
+
+.account-name{
+    max-height: 50px;
+    margin-top: 30px;
+}
+
+.header-buttons{
+    display: flex;
+}
+
+.follovers-block{
+    justify-content: space-between;
+    max-height: 35px;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.chosen-histories{
+    width: 100%;
+    display: flex;
+}
+
+.save-history-block{
+    margin-right: 15px;
+    max-width: 85px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.saved-history-photo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.history-name{
+    margin-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.post-menu{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #DBDBDB;
+}
+
+.post-menu-button{
+    margin-bottom: auto;
+}
+
+.post-menu-button:not(:last-child){
+    margin-right: 10%;
+}
+
+.post-menu-button:focus{
+    border-top: 2px solid #000000;
+    outline: none;
+    margin-top: -2px;
+}
+
+.inst-posts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.post{
+    display: block;
+    position: relative; 
+}
+
+.post-image{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+/*-----------------------------------------------------------------------------------------*/
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #133768;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #133768;
+}
+/*------------------------------------------------------------------------------------------*/
+.blue-button{
+    background-color: #4094EF;
+    color: #FFFFFF;
+
+}
+
+.white-button{
+    background-color: #fff;
+    color: #000000;
+}
+
+.big-button{
+    padding: 6px 35px;
+    border: none;
+    margin-left: 10px;
+}
+
+.small-button{
+    padding: 5px 15px;
+    border: none;
+    margin-left: 10px;
+}
+/*------------------------------------------------------------------------------------------*/
+.big-title{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.625rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+}
+
+.section-text{
+    font-family: Helvetica ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+}
+
+.header-text{
+    font-family: Helvetica ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
+}
+
+.links{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color:rgba(19, 55, 104, 1) ;
+}
+
+.saved-history-font{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+}
+
+@media(max-width:880px){
+    body{
+        width: 100%;
+    }
+
+    .search-feld{
+        display: none;
+    }
+
+    .avatar{
+        width: 150px;
+    }
+
+    .main-section,
+    .account-name{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-right-side{
+        max-width: 100%;
+    }
+
+    .account-name{
+        width: 100%;
+        min-height: 75px;
+    }
+
+    .header-buttons{
+        margin-top: 10px;
+    }
+
+    .big-button{
+        margin-left: 0%;
+    }
+
+    .follovers-block{
+        width: 60%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .account-text{
+        width: 100%;
+    }
+
+    .inst-posts{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:400px){
+    .follovers-block{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .post-menu-button{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
